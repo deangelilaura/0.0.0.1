@@ -1,13 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hello-world',
-  imports: [CommonModule, RouterOutlet, HelloWorld],
+  imports: [CommonModule],
   templateUrl: './hello-world.html',
   styleUrl: './hello-world.css'
 })
-export class HelloWorld {
-
+export class HelloWorld implements OnInit {
+  constructor() { }
+  ngOnInit() {
+  }
 }
+
